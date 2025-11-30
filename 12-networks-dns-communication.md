@@ -1,5 +1,4 @@
-# Docker + MongoDB + DNS (A1 Developer Story Style)
-
+# Docker + MongoDB + DNS 
 When the Node app container was finally running smoothly, it felt like the right time to make our project act like a real application. A real app doesn’t just respond — it *stores* things. For that, we needed a database. So I headed to Docker Hub, searched for **mongo**, clicked the official image, and grabbed the usage examples.
 
 Inside my Docker Compose file, under `services:`, I created a second container. This time no custom Dockerfile — Mongo ships with everything we need. I used the `image:` field directly and added the required root username & password environment variables.
