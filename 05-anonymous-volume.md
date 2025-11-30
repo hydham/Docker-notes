@@ -165,14 +165,12 @@ Let’s remind ourselves how the image is built (simplified):
 
 -   This creates node\_modules inside the image at /app/node\_modules.
 
-4.    
     
 5.  COPY . .  
     
 
 -   Copies the rest of the source code (like index.js) into the image.
 
-7.    
     
 
   
@@ -341,7 +339,6 @@ DUMMY TIP:
 
 -   docker rm node-app -f
 
-3.    
     
 4.  Re-run the container with both volumes:  
     
@@ -349,14 +346,12 @@ DUMMY TIP:
 -   \-v /path/to/project:/app (bind mount for code)
 -   \-v /app/node\_modules (anonymous volume to protect dependencies)
 
-6.    
     
 7.  Check that it’s running:  
     
 
 -   docker ps
 
-9.    
     The container should stay in a Up state now, not exit immediately.
 10.  Test the app in the browser:  
      
@@ -364,7 +359,6 @@ DUMMY TIP:
 -   Visit http://localhost:3000
 -   The app responds correctly.
 
-12.    
      
 13.  Make a code change (for example, remove exclamation marks in index.js) and save.
 14.  Refresh the page – nodemon restarts the Node process, bind mount syncs the new code, and the app updates instantly.
@@ -413,7 +407,7 @@ Answer: Yes, absolutely. Here’s why:
 
 -   We want fast feedback, auto-reload, easy editing.
 
--     
+
     
 -   In production, we do not mount our source code from a host folder.  
     
@@ -451,8 +445,7 @@ So where does the production container get the application code?
 -   RUN npm install
 -   COPY . .
 
--     
-    
+
 
   
 
