@@ -1,7 +1,5 @@
 # Docker Environment Variables with Express & Node
 
-These notes follow the teacher’s flow, including the small “mistakes” and corrections, so it reads like a story of how we learned it, not just a dry cheat sheet.
-
 We already have:
 
 - A simple Express app in **`index.js`**.
