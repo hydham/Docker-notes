@@ -1,4 +1,4 @@
-# Docker Dev & Prod Environment – Full Long‑Form ## 1. Introduction
+# Docker Dev & Prod Environment – ## 1. Introduction
 
 This is the final big chapter where we take everything we’ve done so far with Docker — building images, running containers, bind mounts, anonymous volumes, environment variables, Docker Compose — and we now evolve it into a **real development vs production workflow**.
 
