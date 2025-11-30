@@ -1,6 +1,5 @@
 # Docker Compose for Dev: Replacing Long `docker run` Commands
 
-These notes follow the teacher’s **story flow**, including his “mistakes” and thought process, not just a cheat‑sheet. Idea is: when you re‑read later, you remember *why* each thing exists.
 
 ---
 
